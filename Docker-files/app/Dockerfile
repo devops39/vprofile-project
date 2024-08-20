@@ -4,7 +4,6 @@ RUN git clone https://github.com/devopshydclub/vprofile-project.git
 RUN cd vporfile-project && git checkout docker && mvn install
 
 FROM tomcat:9-jre11
-FROM mysql:8.0.33
 LABEL "Project"="Vprofile"
 LABEL "Author"="Nikola"
 RUN rm -rf /usr/local/tomcat/webapps/*
